@@ -202,7 +202,6 @@ namespace GroupDocs.Viewer.Examples.CSharp
 
             Console.WriteLine();
             Console.WriteLine("All done.");
-            Console.ReadKey();
         }
     }
 }

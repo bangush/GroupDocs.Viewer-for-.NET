@@ -8,7 +8,7 @@ This package contains C# Example Project for [GroupDocs.Viewer for .NET](https:/
   </a>
 </p>
 
-## How to Run the Examples?
+## How to Run the Examples in Visual Studio?
 
 Follow the given steps to proceed with project build:
 
@@ -17,5 +17,15 @@ Follow the given steps to proceed with project build:
 * Build the project
 
 In other case, it is possible that Visual Studio is unable to automatically add APIs references due to Visual Studio version differences. In this case, please add references of missing APIs manually.
+
+## How to Run the Examples in Docker container?
+
+* Navigate into Examples directory
+* Build an image
+  `docker build --pull -t viewer:examples .`
+* Run a container
+  ** Windows Command Line (CMD): `docker run --rm -it -v %cd%:/examples/results viewer:examples`
+  ** Powershell: `docker run --rm -it -v ${PWD}:/examples/results viewer:examples`
+  ** On Linux: `docker run --rm -it -v $(pwd):/examples/results viewer:examples`
 
 For more details, visit  [How to Run Examples](https://docs.groupdocs.com/display/viewernet/How+to+Run+Examples).
