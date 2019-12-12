@@ -24,8 +24,8 @@ In other case, it is possible that Visual Studio is unable to automatically add 
 * Build an image
   `docker build --pull -t viewer:examples .`
 * Run a container
-  ** Windows Command Line (CMD): `docker run --rm -it -v %cd%:/examples/results viewer:examples`
-  ** Powershell: `docker run --rm -it -v ${PWD}:/examples/results viewer:examples`
-  ** On Linux: `docker run --rm -it -v $(pwd):/examples/results viewer:examples`
+  * Windows Command Line (CMD): `docker run --rm -it -v %cd%:/examples/results viewer:examples`
+  * Powershell: `docker run --rm -it -v ${PWD}:/examples/results viewer:examples`
+  * On Linux: `docker run --rm -it -v $(pwd):/examples/results viewer:examples`
 
 For more details, visit  [How to Run Examples](https://docs.groupdocs.com/display/viewernet/How+to+Run+Examples).
