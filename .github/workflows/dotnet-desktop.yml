@@ -73,12 +73,15 @@ jobs:
 
     # Restore the application to populate the obj folder with RuntimeIdentifiers
     - name: Restore the application
-      run: msbuild $env:Solution_Name /t:Restore /p:Configuration=$env:Configuration /t:GroupDocs_Viewer_Examples_CSharp_Framework
+      run: msbuild $env:Solution_Name /t:Restore /p:Configuration=$env:Configuration
       env:
         Configuration: ${{ matrix.configuration }}
 
+    - name: Check
+      run: dir
+
     # Create the app package by building and packaging the Windows Application Packaging project
     - name: Test build for .NET Framework project
-      run: msbuild $env:Wap_Project_Path /p:Configuration=$env:Configuration 
+      run: msbuild $env:Wap_Project_Path /p:Configuration=$env:Configuration /p:ReferencePath=..\packages
       env:
         Configuration: ${{ matrix.configuration }}
