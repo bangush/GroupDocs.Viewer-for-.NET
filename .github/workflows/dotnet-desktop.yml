@@ -36,7 +36,7 @@
 # For a complete CI/CD sample to get started with GitHub Action workflows for Desktop Applications,
 # refer to https://github.com/microsoft/github-actions-for-desktop-apps
 
-name: .NET Core Desktop
+name: Test .NET Core Desktop build
 
 on:
   push:
@@ -57,8 +57,7 @@ jobs:
 
     env:
       Solution_Name: Examples\GroupDocs.Viewer.Examples.CSharp.sln       # Replace with your solution name, i.e. MyWpfApp.sln.
-      Wap_Project_Directory: GroupDocs.Viewer.Examples.CSharp.Framework    # Replace with the Wap project directory relative to the solution, i.e. MyWpfApp.Package.
-      Wap_Project_Path: GroupDocs.Viewer.Examples.CSharp.Framework\GroupDocs.Viewer.Examples.CSharp.Framework.csproj  # Replace with the path to your Wap project, i.e. MyWpf.App.Package\MyWpfApp.Package.wapproj.
+      Wap_Project_Path: Examples\GroupDocs.Viewer.Examples.CSharp.Framework\GroupDocs.Viewer.Examples.CSharp.Framework.csproj  # Replace with the path to your Wap project, i.e. MyWpf.App.Package\MyWpfApp.Package.wapproj.
 
     steps:
     - name: Checkout
@@ -79,10 +78,7 @@ jobs:
         Configuration: ${{ matrix.configuration }}
 
     # Create the app package by building and packaging the Windows Application Packaging project
-    - name: Create the app package
+    - name: Test build for .NET Framework project
       run: msbuild $env:Wap_Project_Path /p:Configuration=$env:Configuration 
       env:
-        Appx_Bundle: Always
-        Appx_Bundle_Platforms: x86|x64
-        Appx_Package_Build_Mode: StoreUpload
         Configuration: ${{ matrix.configuration }}

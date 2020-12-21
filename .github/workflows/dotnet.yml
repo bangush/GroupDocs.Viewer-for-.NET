@@ -19,5 +19,5 @@ jobs:
         dotnet-version: 3.1.301
     - name: Restore dependencies
       run: dotnet restore Examples/GroupDocs.Viewer.Examples.CSharp.Core
-    - name: Build
+    - name: Test build for .NET Core project
       run: dotnet build --no-restore Examples/GroupDocs.Viewer.Examples.CSharp.Core
