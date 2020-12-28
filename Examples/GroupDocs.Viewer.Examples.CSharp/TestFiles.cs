@@ -133,6 +133,10 @@ namespace GroupDocs.Viewer.Examples.CSharp
         public static string SAMPLE_CMX =>
              GetSampleFilePath("sample.cmx");
 
+        // Web 
+        public static string SAMPLE_CHM =>
+             GetSampleFilePath("sample.chm");
+
         private static string GetSampleFilePath(string filePath) =>
            Path.Combine(Utils.SamplesPath, filePath);
     }
