@@ -183,6 +183,7 @@ namespace GroupDocs.Viewer.Examples.CSharp
 
             #region Rendering Web documents
             //RenderingHtmlWithUserDefinedMargins.Run();
+            //RenderingChmFiles.Run();
             #endregion
 
             #endregion
