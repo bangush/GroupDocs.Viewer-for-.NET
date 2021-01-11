@@ -15,6 +15,8 @@ namespace GroupDocs.Viewer.Examples.CSharp
         // CAD drawings
         public static string SAMPLE_DWG_WITH_LAYOUTS_AND_LAYERS =>
             GetSampleFilePath("with_layers_and_layouts.dwg");
+        public static string SAMPLE_AI =>
+            GetSampleFilePath("sample.ai");
         public static string SAMPLE_PLT =>
             GetSampleFilePath("sample.plt");
         public static string SAMPLE_CF2 =>

@@ -60,7 +60,7 @@ namespace GroupDocs.Viewer.Examples.CSharp
 
             //RenderToHtmlWithEmbeddedResources.Run();
             //RenderToHtmlWithExternalResources.Run();
-            
+
             //ExcludingFontsFromOutputHtml.Run();
             //MinifyHtmlDocument.Run();
             //RenderToResponsiveHtml.Run();
@@ -80,6 +80,7 @@ namespace GroupDocs.Viewer.Examples.CSharp
             //RenderingEmzAndEmf.Run();
             //RenderingCdr.Run();
             //RenderingCmx.Run();
+            //RenderingAi.Run();
 
             #endregion
 
