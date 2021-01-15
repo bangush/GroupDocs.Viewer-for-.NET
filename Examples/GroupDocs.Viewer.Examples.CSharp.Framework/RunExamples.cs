@@ -81,6 +81,7 @@ namespace GroupDocs.Viewer.Examples.CSharp
             //RenderingCdr.Run();
             //RenderingCmx.Run();
             //RenderingAi.Run();
+            //RenderingTga.Run();
 
             #endregion
 
