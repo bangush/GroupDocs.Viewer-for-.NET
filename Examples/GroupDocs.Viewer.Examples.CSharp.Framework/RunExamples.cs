@@ -82,6 +82,7 @@ namespace GroupDocs.Viewer.Examples.CSharp
             //RenderingCmx.Run();
             //RenderingAi.Run();
             //RenderingTga.Run();
+            //RenderingApng.Run();
 
             #endregion
 
@@ -223,7 +224,7 @@ namespace GroupDocs.Viewer.Examples.CSharp
             //HowToDetermineFileType.FromFileExtension();
             //HowToDetermineFileType.FromMediaType();
             //HowToDetermineFileType.FromStream();
-            
+
             //HowToLogging.ToConsole();
             //HowToLogging.ToFile();
             #endregion

@@ -136,6 +136,8 @@ namespace GroupDocs.Viewer.Examples.CSharp
              GetSampleFilePath("sample.cmx");
         public static string SAMPLE_TGA =>
             GetSampleFilePath("sample.tga");
+        public static string SAMPLE_APNG =>
+            GetSampleFilePath("sample.apng");
 
         // Web 
         public static string SAMPLE_CHM =>

@@ -5,7 +5,7 @@ using System.IO;
 namespace GroupDocs.Viewer.Examples.CSharp.AdvancedUsage.Rendering.RenderingOptionsByDocumentType.RenderingImageFiles
 {
     /// <summary>
-    ///  This example demonstrates how to render Truevision TGA (TARGA) (tga) file-format support
+    ///  This example demonstrates how to render Truevision TGA (TARGA) (tga) format
     /// </summary>
     public class RenderingTga
     {
