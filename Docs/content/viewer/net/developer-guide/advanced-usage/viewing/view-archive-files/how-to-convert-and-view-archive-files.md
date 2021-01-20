@@ -45,7 +45,7 @@ To convert archive files to single page HTML with GroupDocs.Viewer for .NET use
 using (Viewer viewer = new Viewer("sample.zip"))
 {
        HtmlViewOptions options = HtmlViewOptions.ForEmbeddedResources("output.html");
-       options.RenderSinglePage = true;
+       options.RenderToSinglePage = true;
        viewer.View(options);
 }
 ```

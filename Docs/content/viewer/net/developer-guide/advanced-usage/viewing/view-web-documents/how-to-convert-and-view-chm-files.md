@@ -28,7 +28,7 @@ To convert CHM files to HTML with GroupDocs.Viewer for .NET use following code:
 using (Viewer viewer = new Viewer("sample.chm"))
 {
          HtmlViewOptions options = HtmlViewOptions.ForEmbeddedResources("chm_result_{0}.html");
-         options.RenderSinglePage = true; // Enable it if you want to convert all CHM content to single page
+         options.RenderToSinglePage = true; // Enable it if you want to convert all CHM content to single page
 
          //viewer.View(options,1,2,3); // Convert only 1,2,3 pages
          viewer.View(options); // Convert all pages
