@@ -71,28 +71,22 @@ Directory | Description
 
 Are you ready to give GroupDocs.Viewer for .NET a try? Simply execute `Install-Package GroupDocs.Viewer` from Package Manager Console in Visual Studio to fetch & reference GroupDocs.Viewer assembly in your project. If you already have GroupDocs.Viewer for .Net and want to upgrade it, please execute `Update-Package GroupDocs.Viewer` to get the latest version.
 
-## Render Layouts of a DWG CAD Drawing as HTML
+## How to render DOCX to HTML
 
 ```csharp
-string outputDirectory = @"C:\output\RenderAllLayouts";
-string pageFilePathFormat = Path.Combine(outputDirectory, "page_{0}.html");
-using (Viewer viewer = new Viewer("with_layers_and_layouts.dwg"))
+using (Viewer viewer = new Viewer("sample.docx"))
 {
-   HtmlViewOptions options = HtmlViewOptions.ForEmbeddedResources(pageFilePathFormat);
-   options.CadOptions.RenderLayouts = true;
-   viewer.View(options);
+    HtmlViewOptions options = HtmlViewOptions.ForEmbeddedResources();
+    viewer.View(options);
 }
 ```
 
-## Add watermark to document
+## Add watermark to the output HTML
 
 ```csharp
-string outputDirectory = @"C:\output\AddWatermark";
-string pageFilePathFormat = Path.Combine(outputDirectory, "page_{0}.html");
-
 using (Viewer viewer = new Viewer("sample.docx"))
 {
-    HtmlViewOptions options = HtmlViewOptions.ForEmbeddedResources(pageFilePathFormat);
+    HtmlViewOptions options = HtmlViewOptions.ForEmbeddedResources();
     options.Watermark = new Watermark("This is a watermark");
     viewer.View(options);
 }
