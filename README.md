@@ -84,7 +84,7 @@ using (Viewer viewer = new Viewer("with_layers_and_layouts.dwg"))
 }
 ```
 
-## Load & View DOCX as PDF while Applying Password to PDF
+## Add watermark to document
 
 ```csharp
 string outputDirectory = @"C:\output\AddWatermark";
