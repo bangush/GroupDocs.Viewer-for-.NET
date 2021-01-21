@@ -37,7 +37,7 @@ Directory | Description
 
 ## Supported Formats for HTML, Image, PDF Rendering
 
-**Archives:** TAR, ZIP, RAR, BZ2, GZIP '
+**Archives:** TAR, ZIP, RAR, BZ2, GZIP \
 **Ebook:** EPUB, MOBI \
 **Apple:** NUMBERS \
 **Microsoft Word:** DOC, DOCM, DOCX, DOT, DOTM, DOTX, RTF, TXT\
