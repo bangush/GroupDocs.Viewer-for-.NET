@@ -38,7 +38,7 @@ To convert TXT files to single HTML with GroupDocs.Viewer for .NET use followin
 using (Viewer viewer = new Viewer("sample.txt"))
 {
        HtmlViewOptions options = HtmlViewOptions.ForEmbeddedResources("output.html");
-       options.RenderSinglePage = true;
+       options.RenderToSinglePage = true;
 
        viewer.View(options);
 }

@@ -20,7 +20,7 @@ namespace GroupDocs.Viewer.Examples.CSharp.AdvancedUsage.Rendering.RenderingOpti
             using (Viewer viewer = new Viewer(TestFiles.SAMPLE_CHM))
             {
                 HtmlViewOptions options = HtmlViewOptions.ForEmbeddedResources(pageFilePathFormat);
-                options.RenderSinglePage = true; // Enable it if you want to convert all CHM content to single page
+                options.RenderToSinglePage = true; // Enable it if you want to convert all CHM content to single page
 
                 //viewer.View(options,1,2,3); // Convert only 1,2,3 pages
                  viewer.View(options); // Convert all pages
