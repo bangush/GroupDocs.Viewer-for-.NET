@@ -37,24 +37,27 @@ Directory | Description
 
 ## Supported Formats for HTML, Image, PDF Rendering
 
-**Microsoft Word:** DOC, DOCM, DOCX, DOT, DOTM, DOTX\
-**Microsoft Excel:** XLS, XLSB, XLSM, XLSX, XLT, XLTX, XLAM\
+**Archives:** TAR, ZIP, RAR, BZ2, GZIP '
+**Ebook:** EPUB, MOBI \
+**Apple:** NUMBERS \
+**Microsoft Word:** DOC, DOCM, DOCX, DOT, DOTM, DOTX, RTF, TXT\
+**Microsoft Excel:** XLS, XLSB, XLSM, XLSX, XLT, XLTX, XLAM, XLTM\
 **Microsoft PowerPoint:** PPT, PPTX, PPTM, PPS, PPSX, PPSM, POT, POTM, POTX\
 **Microsoft Visio:** VDW, VDX, VSD, VSDM, VSDX, VSS, VSSM, VSSX, VST, VSTM, VSTX, VSX, VTX\
 **Microsoft Project:** MPP, MPT, MPX\
 **Microsoft OneNote:** ONE\
-**OpenOffice:** ODG, FODG, OTG, OXPS, ODP, OTP, FODS, ODS, OTS, ODT, OTT, OXPS\
+**OpenOffice:** ODG, FODG, OTG, XPS, ODP, FODP, OTP, FODS, ODS, OTS, ODT, OTT, OXPS\
 **AutoCAD:** DGN, DWF, DWT, DWG, DXF\
-**CorelDraw:** CDR\
+**CorelDraw:** CDR, CMX\
 **Adobe Photoshop:** PSD, PSB\
-**Programming:** CS, VB, AS, AS3, ASM, BAT, C, CC, CMAKE, CPP, CSS, CXX, ERB, GROOVY, H, HAML, HH, JAVA, JS, JSON, LESS, LOG, M, MAKE, MD, ML, MM, PHP, PL, PROPERTIES, PY, RB, RST, SASS, SCALA, SCM, SCRIPT, SH, SML, SQL, VIM, YAML\
-**Image:** GIF, ICO, JP2, JPF, JPX, JPM, J2C, J2K, JPC, JPG, JPEG, SVG, SVGZ, TIF, TIFF\
-**Markup:** HTML, MHT, MHTML, MD\
+**Programming:** CS, VB, AS, AS3, ASM, BAT, C, CC, CMAKE, CPP, CSS, CXX, ERB, GROOVY, H, HAML, HH, JAVA, JS, JSON, LESS, LOG, M, MAKE, MD, ML, MM, PHP, PL, PROPERTIES, PY, RB, RST, SASS, SCALA, SCM, SCRIPT, SH, SML, SQL, VIM, YAML, DIFF\
+**Image:** AI, GIF, ICO, JP2, JPF, JPX, JPM, J2C, J2K, JPC, JPG, JPEG, SVG, SVGZ, TIF, TIFF, TGA, PNG, APNG, BMP, WEBP, PCL, DICOM\
+**Markup:** HTML, MHT, MHTML, MD, XML\
 **Portable:** PDF\
 **Archive:** TAR, ZIP, BZ2, RAR\
 **Email:** EML, EMLX, MSG, OST, PST, NSF\
-**Metafile:** CGM, EMF, WMF\
-**Other:** IFC, STL, PS, XPS, TEX, SXC, DJVU, DNG, DIB, EPS, HPG, PLT, IGS, CF2, OBJ
+**Metafile:** CGM, EMF, EMZ, WMF, WMZ\
+**Other:** IFC, STL, PS, TEX, SXC, DJVU, DNG, DIB, EPS, HPG, PLT, IGS, CF2, OBJ, CHM, CSV, TSV, VCF
 
 ## Develop & Deploy GroupDocs.Viewer for .NET Anywhere
 
@@ -62,7 +65,7 @@ Directory | Description
 **macOS:** Mac OS X\
 **Linux:** Ubuntu, OpenSUSE, CentOS, and others\
 **Development Environments:** Microsoft Visual Studio, Xamarin.Android, Xamarin.IOS, Xamarin.Mac, MonoDevelop\
-**Supported Frameworks:** .NET Framework 2.0 or higher, Mono Framework 1.2 or higher, .NET Standard 2.0, .NET Core 2.0 & 2.1
+**Supported Frameworks:** .NET Framework 2.0 or higher, .NET Standard 2.0, .NET Core 3.1 and higher
 
 ## Get Started with GroupDocs.Viewer for .NET
 
@@ -81,22 +84,16 @@ using (Viewer viewer = new Viewer("with_layers_and_layouts.dwg"))
 }
 ```
 
-## Load & View DOCX as PDF while Applying Password to PDF 
+## Load & View DOCX as PDF while Applying Password to PDF
 
 ```csharp
-string outputDirectory = @"C:\output\ProtectPdfDocument";
-string filePath = Path.Combine(outputDirectory, "output.pdf");
+string outputDirectory = @"C:\output\AddWatermark";
+string pageFilePathFormat = Path.Combine(outputDirectory, "page_{0}.html");
+
 using (Viewer viewer = new Viewer("sample.docx"))
 {
-    // set PDF file security
-    Security security = new Security();
-    security.DocumentOpenPassword = "o123";
-    security.PermissionsPassword = "p123";
-    security.Permissions = Permissions.AllowAll ^ Permissions.DenyPrinting;
-
-    PdfViewOptions options = new PdfViewOptions(filePath);
-    options.Security = security;
-
+    HtmlViewOptions options = HtmlViewOptions.ForEmbeddedResources(pageFilePathFormat);
+    options.Watermark = new Watermark("This is a watermark");
     viewer.View(options);
 }
 ```
