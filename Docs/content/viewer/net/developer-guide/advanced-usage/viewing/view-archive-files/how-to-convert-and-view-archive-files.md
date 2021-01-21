@@ -28,7 +28,6 @@ To convert archive files to multiple pages HTML with GroupDocs.Viewer for .NET 
 using (Viewer viewer = new Viewer("sample.zip"))
 {
        HtmlViewOptions options = HtmlViewOptions.ForEmbeddedResources("output_page_{0}.html");
-
        viewer.View(options);
 }
 ```
