@@ -51,6 +51,8 @@ namespace GroupDocs.Viewer.Examples.CSharp
             GetSampleFilePath("hieroglyphs_1.pdf");
         public static string ENCRYPTED =>
             GetSampleFilePath("encrypted.pdf");
+        public static string ONE_PAGE_TEXT_PDF =>
+            GetSampleFilePath("one-page-text.pdf");
 
         // Presentations
         public static string PPTX_WITH_NOTES =>

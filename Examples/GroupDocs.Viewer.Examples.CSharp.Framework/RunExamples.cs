@@ -152,6 +152,7 @@ namespace GroupDocs.Viewer.Examples.CSharp
             //AdjustImageQuality.Run();
             //EnableLayeredRendering.Run();
             //RenderOriginalPageSize.Run();
+            //DisableTextSelection.Run();
 
             #endregion
 
