@@ -41,6 +41,8 @@ namespace GroupDocs.Viewer.Examples.CSharp
             GetSampleFilePath("with_subfolders.ost");
         public static string SAMPLE_NSF =>
             GetSampleFilePath("sample.nsf");
+        public static string SAMPLE_EML =>
+           GetSampleFilePath("sample.eml");
 
         // PDFs
         public static string SAMPLE_PDF =>

@@ -132,6 +132,7 @@ namespace GroupDocs.Viewer.Examples.CSharp
 
             //AdjustPageSize.Run();
             //RenameEmailFields.Run();
+            //DateTimeFormatAndTimeZoneOffset.Run();
 
             #endregion
 
