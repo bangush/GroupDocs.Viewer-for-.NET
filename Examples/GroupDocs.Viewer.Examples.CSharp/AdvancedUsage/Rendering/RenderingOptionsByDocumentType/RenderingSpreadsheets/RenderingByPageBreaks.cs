@@ -31,4 +31,3 @@ namespace GroupDocs.Viewer.Examples.CSharp.AdvancedUsage.Rendering.RenderingOpti
         }
     }
 }
-
