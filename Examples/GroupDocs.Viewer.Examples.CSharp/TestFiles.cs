@@ -27,6 +27,8 @@ namespace GroupDocs.Viewer.Examples.CSharp
             GetSampleFilePath("sample.obj");
         public static string SAMPLE_HPG =>
             GetSampleFilePath("sample.hpg");
+        public static string SAMPLE_PC3_CONFIG =>
+            GetSampleFilePath("small_page.pc3");
 
         // Email messages
         public static string SAMPLE_MSG =>

@@ -119,6 +119,12 @@ namespace GroupDocs.Viewer.Examples.CSharp
 
             #region Rendering options by document type
 
+            #region Rendering CAD Files
+
+            //RenderingPc3Files.Run();
+
+            #endregion
+
             #region Rendering Archive Files
 
             //GetViewInfoForArchiveFile.Run();

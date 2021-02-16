@@ -44,6 +44,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)AdvancedUsage\Rendering\RenderingOptionsByDocumentType\RenderingCadDrawings\RenderingHpg.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)AdvancedUsage\Rendering\RenderingOptionsByDocumentType\RenderingCadDrawings\RenderingIgs.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)AdvancedUsage\Rendering\RenderingOptionsByDocumentType\RenderingCadDrawings\RenderingObj.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)AdvancedUsage\Rendering\RenderingOptionsByDocumentType\RenderingCadDrawings\RenderingPc3Files.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)AdvancedUsage\Rendering\RenderingOptionsByDocumentType\RenderingCadDrawings\RenderingPlt.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)AdvancedUsage\Rendering\RenderingOptionsByDocumentType\RenderingCadDrawings\RenderLayers.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)AdvancedUsage\Rendering\RenderingOptionsByDocumentType\RenderingCadDrawings\RenderSingleLayout.cs" />
@@ -250,6 +251,9 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
     <None Include="$(MSBuildThisFileDirectory)Resources\SampleFiles\sample.zip">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Resources\SampleFiles\small_page.pc3">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
     <None Include="$(MSBuildThisFileDirectory)Resources\SampleFiles\three_sheets.xlsx">
