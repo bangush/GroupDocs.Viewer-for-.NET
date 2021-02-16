@@ -113,6 +113,7 @@ namespace GroupDocs.Viewer.Examples.CSharp
             //FlipRotatePages.Run();
             //RenderWithCustomFonts.Run();
             //RenderingTxt.Run();
+            //SetImageSizeLimits.Run();
 
             #endregion
 
