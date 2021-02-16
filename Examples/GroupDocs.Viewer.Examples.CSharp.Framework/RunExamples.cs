@@ -179,6 +179,7 @@ namespace GroupDocs.Viewer.Examples.CSharp
             //GetWorksheetsNames.Run();
             //RenderingNumbers.Run();
             //RenderingXmlSpreadSheetML.Run();
+            //RenderingByPageBreaks.Run();
 
             #endregion
 

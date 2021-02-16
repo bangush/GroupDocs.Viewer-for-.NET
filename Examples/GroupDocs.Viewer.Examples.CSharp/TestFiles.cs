@@ -80,6 +80,8 @@ namespace GroupDocs.Viewer.Examples.CSharp
             GetSampleFilePath("sample.xlsx");
         public static string SAMPLE_XLSX_WITH_PRINT_AREAS =>
             GetSampleFilePath("with_four_print_areas.xlsx");
+        public static string PAGE_BREAKS_XLSX =>
+            GetSampleFilePath("page-breaks.xlsx");
         public static string SAMPLE_XLSX_WITH_EMPTY_COLUMN =>
             GetSampleFilePath("with_empty_column.xlsx");
         public static string SAMPLE_XLSX_WITH_EMPTY_ROW =>

@@ -19,7 +19,7 @@ If you set MaxWidth/MaxHeight options, if the image exceeds one of these limits 
 * The following code sample shows how to set the output image size limits when rendering the document.
 
 ```csharp
-using (Viewer viewer = new Viewer("sample.docx"))
+using (Viewer viewer = new Viewer("sample.jpg"))
 {
     JpgViewOptions viewOptions = new JpgViewOptions("result_{0}.jpg");
     //PngViewOptions viewOptions = new PngViewOptions("result_{0}.png");
