@@ -13,7 +13,7 @@ From 21.2 version you can apply PC3 file configuration. PC3 file is "Plotter Con
 To apply PC3 file, please use the following code:
 
 ```csharp
-using (Viewer viewer = new Viewer("sample.cf2"))
+using (Viewer viewer = new Viewer("sample.dwg"))
 {
        PngViewOptions options = new PngViewOPtions("result.png");
        options.CadOptions.Pc3File = "small_page.pc3";
