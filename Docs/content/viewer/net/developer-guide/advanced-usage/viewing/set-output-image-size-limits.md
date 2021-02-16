@@ -31,7 +31,7 @@ using (Viewer viewer = new Viewer("sample.jpg"))
 }
 ```
 
-[PngViewOptions](https://apireference.groupdocs.com/net/viewer/groupdocs.viewer.options/pngviewoptions) and [JpgViewOptions](https://apireference.groupdocs.com/net/viewer/groupdocs.viewer.options/jpgviewoptions) support special interface [IMaxSizeOptions](https://apireference.groupdocs.com/net/viewer/groupdocs.viewer.options/imaxsizeoptions) , which contain properties for size limits.
+[PngViewOptions](https://apireference.groupdocs.com/net/viewer/groupdocs.viewer.options/pngviewoptions) and [JpgViewOptions](https://apireference.groupdocs.com/net/viewer/groupdocs.viewer.options/jpgviewoptions) implement special interface [IMaxSizeOptions](https://apireference.groupdocs.com/net/viewer/groupdocs.viewer.options/imaxsizeoptions), which contain properties for size limits.
 
 ```csharp
 /// <summary>
