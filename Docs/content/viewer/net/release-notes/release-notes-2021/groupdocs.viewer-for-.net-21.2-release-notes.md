@@ -10,7 +10,7 @@ hideChildren: False
 ---
 {{< alert style="info" >}}This page contains release notes for GroupDocs.Viewer for .NET 21.2{{< /alert >}}
 
-## Major Features  
+## Major Features
 
 There are 51 features, improvements, and bug-fixes in this release, most notable are:
 
@@ -137,15 +137,15 @@ public int MaxHeight { get; set; }
 
 ### GroupDocs.Viewer.Options.SpreadsheetOptions class
 
-[GroupDocs.Viewer.Options.SpreadsheetOptions.ForRenderingByPageBreaks](<https://apireference.groupdocs.com/viewer/net/groupdocs.viewer.options.spreadsheetoptions/methods/forrenderingbypagebreaks>) method was added that add support for split Excel sheets by page breaks when rendering.
+[GroupDocs.Viewer.Options.SpreadsheetOptions.ForRenderingByPageBreaks](<https://apireference.groupdocs.com/viewer/net/groupdocs.viewer.options/spreadsheetoptions/methods/forrenderingbypagebreaks>) method was added that add support for split Excel sheets by page breaks when rendering.
 
 ### GroupDocs.Viewer.Options.CadOptions class
 
-[GroupDocs.Viewer.Options.CadOptions.Pc3File](<https://apireference.groupdocs.com/viewer/net/groupdocs.viewer.options.cadoptions/properties/pc3file>) property was added that add support to apply PC3 configuration plotter file when rendering CAD files.
+[GroupDocs.Viewer.Options.CadOptions.Pc3File](<https://apireference.groupdocs.com/viewer/net/groupdocs.viewer.options/cadoptions/properties/pc3file>) property was added that add support to apply PC3 configuration plotter file when rendering CAD files.
 
 ### GroupDocs.Viewer.Options.EmailOptions class
 
-Properties were added to [GroupDocs.Viewer.Options.EmailOptions](<https://apireference.groupdocs.com/viewer/net/groupdocs.viewer.emailoptions>) class that adds support to set time zone offset and date-time format when rendering E-mail messages to HTML.
+Properties were added to [GroupDocs.Viewer.Options.EmailOptions](<https://apireference.groupdocs.com/viewer/net/groupdocs.viewer.options/emailoptions>) class that adds support to set time zone offset and date-time format when rendering E-mail messages to HTML.
 
 ```csharp
 /// <summary>
